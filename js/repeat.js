@@ -11,7 +11,7 @@
  * subject to an additional IP rights grant found at
  * http://polymer.github.io/PATENTS.txt
  */
-import { directive, NodePart, removeNodes, reparentNodes } from '../lit-html.js';
+import { directive, NodePart, removeNodes, reparentNodes } from './lit-html.js';
 const keyMapCache = new WeakMap();
 function cleanMap(part, key, map) {
     if (!part.startNode.parentNode) {
