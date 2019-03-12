@@ -1,35 +1,76 @@
 @import (reference) "global.less";
 
-#header {
-    background-color: deepskyblue;
-    color: white;
-    width: 100%;
-    height: 150px;
-    margin-bottom: 20px;
-}
 
-#headerText {
-    padding: 100px 0 0 20px;
-    font-size: 20px;
-    color: @color-red;
-}
+#main-container{
+    .header-container {
+        background-color: deepskyblue;
+        color: white;
+        width: 100%;
+        height: 150px;
+        margin-bottom: 20px;
 
-#orgButton {
-    margin-bottom: 20px;
-}
+        .header-text{
+            padding: 100px 0 0 20px;
+            font-size: 20px;
+            color: @color-red;
+        }
+    }
 
-#search {
-    border: 1px solid gray;
-    padding: 20px 10px 20px 10px;
-}
+    .action-container{
+        .new-org-button{
+            margin-bottom: 20px;
+        }
+    }
 
-#parameters {
-    border: 1px solid gray;
-    padding: 20px 10px 20px 10px;
-}
+    .search-container {
+        border: 1px solid gray;
+        padding: 20px 10px 20px 10px;
 
-#searchedOrgs {
-    border: 1px solid gray;
-    padding: 20px 10px 20px 10px;
-    margin-top: 20px;
+        .input-label{
+
+        }
+
+        .input-checkbox{
+
+        }
+
+        .input-parameters{
+            .control-management{
+
+            }
+
+            .control-options{
+
+            }
+
+            .control-employee{
+
+            }
+
+            .control-assistant{
+
+            }
+        }
+
+        .button{
+            .clear{
+
+            }
+
+            .search{
+                
+            }
+        }
+    }
+    
+    #parameters {
+        border: 1px solid gray;
+        padding: 20px 10px 20px 10px;
+    }
+    
+    #searchedOrgs {
+        border: 1px solid gray;
+        padding: 20px 10px 20px 10px;
+        margin-top: 20px;
+    }
 }

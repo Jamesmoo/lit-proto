@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Organization Management</title>
-    <link href="css/proto.css" rel="stylesheet">
-</head>
-<body>
-<div id="header">
-    <div id="headerText">Organization Management</div>
-</div>
-<button id="orgButton">New Organization</button>
-<div id="search"></div>
-<div id="searchedOrgs"></div>
-<script type="module" src="js/proto.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Organization Management</title>
+        <link href="css/proto.css" rel="stylesheet">
+        <script type="module" src="js/proto.js" defer></script>
+    </head>
+    <body>
+        <div id="main-container">
+            <div class="header-container">
+                <div class="header-text">Organization Management</div>
+            </div>
+
+            <div class="action-container">
+                <button class="new-org-button">New Organization</button>
+            </div>
+
+            <div class="search-container"></div>
+            <div class="results-container"></div>
+        </div>
+    </body>
 </html>

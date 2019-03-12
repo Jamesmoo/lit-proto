@@ -1,27 +1,27 @@
-#header {
+#main-container .header-container {
   background-color: deepskyblue;
   color: white;
   width: 100%;
   height: 150px;
   margin-bottom: 20px;
 }
-#headerText {
+#main-container .header-container .header-text {
   padding: 100px 0 0 20px;
   font-size: 20px;
   color: #456346;
 }
-#orgButton {
+#main-container .action-container .new-org-button {
   margin-bottom: 20px;
 }
-#search {
+#main-container .search-container {
   border: 1px solid gray;
   padding: 20px 10px 20px 10px;
 }
-#parameters {
+#main-container #parameters {
   border: 1px solid gray;
   padding: 20px 10px 20px 10px;
 }
-#searchedOrgs {
+#main-container #searchedOrgs {
   border: 1px solid gray;
   padding: 20px 10px 20px 10px;
   margin-top: 20px;

@@ -30,31 +30,31 @@ const dropdownOptions = (options) => html`
 const searchBox = (dropdowns) => html`
 	
   Search Criteria:<br>
-  <label>
-    <input type="checkbox">
+  <label class="input-label">
+    <input class="input-checkbox" type="checkbox">
   </label> Search active organizations only
 ​
-  <div id="parameters">
-    <select>
+  <div class="input-parameters">
+    <select class="control-management">
 			${dropdownOptions(dropdowns.columnOptions)}
       <option value="alternateManagementAssistant">Alternate Management Assistant</option>
     </select>
-    <select>
+    <select class="control-options">
 			${dropdownOptions(dropdowns.operatorOptions)}
       <option value="notEqualTo">not equal to</option>
     </select>
-    <select>
+    <select class="control-employee">
 			${dropdownOptions(dropdowns.employeeOptions)}
       <option value="smithMorty">Smith, Morty (309)</option>
     </select>
-    <select>
+    <select class="control-assistant">
 			${dropdownOptions(dropdowns.logicalOptions)}
       <option value="Alternate Management Assistant">Alternate Management Assistant</option>
     </select>
   </div>
 ​
-  <button>Clear</button>
-  <button>Search</button>  
+  <button class="button clear">Clear</button>
+  <button class="button search">Search</button>  
 `
 render(searchBox(dropdowns), document.getElementById('search'));
 
