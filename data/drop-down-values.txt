@@ -1,0 +1,77 @@
+{
+"org_attr":
+[
+{"title":"Active","value":"Active_Flag","choose_order":1,"sort_order":1,"action_template":{}},
+{"title":"Alternate Supervisor","value":"Alternate_Supervisor_id","choose_order":1,"sort_order":1,"action_template":{}},
+{"title":"Alternate Management Assistant","value":"Alternate_Manage_Assist_Id","choose_order":1,"sort_order":1,"action_template":{}},
+{"title":"Location","value":"Location_Id","choose_order":1,"sort_order":1,"action_template":{}},
+{"title":"Location Detail","value":"Location","choose_order":1,"sort_order":1,"action_template":{}},
+{"title":"Official Name","value":"Official_Name","choose_order":1,"sort_order":1,"action_template":{}},
+{"title":"Organization","value":"Organization_Id","choose_order":1,"sort_order":1,"action_template":{}},
+{"title":"Type","value":"Organization_Type_Cd","choose_order":1,"sort_order":1,"action_template":{}},
+{"title":"Parent Organization","value":"Next_Higher_Org_Id","choose_order":1,"sort_order":1,"action_template":{}},
+{"title":"Primary Supervisor","value":"Primary_Supervisor_Id","choose_order":1,"sort_order":1,"action_template":{}},
+{"title":"Primary Managment Assistant","value":"Primary_Manage_Assist_Id","choose_order":1,"sort_order":1,"action_template":{}},
+{"title":"Short Name","value":"Organization_Name","choose_order":1,"sort_order":1,"action_template":{}}
+]
+}
+"Active":"Active_Flag",
+"Alternate Supervisor":"Alternate_Supervisor_id",
+"Alternate Management Assistant":"Alternate_Manage_Assist_Id",
+"Location":"Location_Id",
+"Location Detail":"Location",
+"Official Name":"Official_Name",
+"Organization":"Organization_Id",
+"Type":"Organization_Type_Cd",
+"Parent Organization":"Next_Higher_Org_Id",
+"Primary Supervisor":"Primary_Supervisor_Id",
+"Primary Managment Assistant":"Primary_Manage_Assist_Id",
+"Short Name":"Organization_Name"
+equal to : equal to
+not equal to : not equal to
+contains : contains 
+doesn't contain : doesn't contain
+309 SMXG
+309 SMXG/MXDE
+309 SMXG/MXDEP
+309 SMXG/MXDES
+309 SMXG/MXDET
+309 SMXG/MXDEV
+309 SMXG/MXDEV1
+309 SMXG/MXDEV2
+309 SMXG/MXDEV3
+309 SMXG/MXDEV4
+AND : AND
+OR : OR
+Active : Active_Flag
+Alternate Supervisor : Alternate_Supervisor_id
+Alternate Management Assistant : Alternate_Manage_Assist_Id
+Official Name : Official_Name
+Organization : Organization_Id
+Type : Organization_Type_Cd
+Parent Organization : Next_Higher_Org_Id
+Primary Supervisor : Primary_Supervisor_Id
+Primary Managment Assistant : Primary_Manage_Assist_Id
+Short Name : Organization_Name
+Group : Group
+Squadron : Squadron
+Flight : Flight
+Wing : Wing
+Super Flight : Super Flight
+"
+Choose : <None>
+Site : Site
+Building : Bldg
+Bay : Bay
+Room : Rm
+Vault : Vault
+Cubicle : Cube
+Electriever : Elctvr
+Vidmar : Vidmar
+Cabinet : Cab
+Rack : Rack
+Shelf : Shelf
+Drawer : Drwr
+Slot : Slot
+Bin : Bin
+max 5 criteria

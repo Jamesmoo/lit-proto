@@ -1,0 +1,12 @@
+ORGANIZATION_ID, ORGANIZATION_NAME, OFFICIAL_NAME, ORGANIZATION_TYPE_CD, NEXT_HIGHER_ORG_ID, ACTIVE_FLAG, DESCRIPTION, PRIMARY_SUPERVISOR_ID, PRIMARY_SUPERVISOR_NAME, ALTERNATE_SUPERVISOR_ID, ALTERNATE_SUPERVISOR_NAME, PRIMARY_TIMEKEEPER_ID, PRIMARY_TIMEKEEPER_NAME, ALTERNATE_TIMEKEEPER_ID, ALTERNATE_TIMEKEEPER_NAME
+1,309 SMXG,309 SMXG CL,Group,,Y,309th Software Maintenance Group (SMXG),6927,"Diamond, James",1928,"Stauder, Tracy",6854,"Hurd, Kimberly",6135,"Taggart, Nicole"
+455,309 SMXG/MXDE,309 SMXG/MXDE,Squadron,1,Y,Engineering & Technical Team (MXDE),1754,"Cummings, Enos",,,6627,"Meyer, Jeffery",6830,"Ward, Ashlee"
+463,309 SMXG/MXDEL,309 SMXG/MXDEL,Flight,455,N,Launch Pad / Recruiting Team,,,,,6830,"Ward, Ashlee",6627,"Meyer, Jeffery"
+456,309 SMXG/MXDEP,309 SMXG/MXDEP,Flight,455,Y,Quality/Process/Measurement and Analysis Team,4190,"Stewart, Richard",1279,"Milos, Peggy",6830,"Ward, Ashlee",6627,"Meyer, Jeffery"
+457,309 SMXG/MXDES,309 SMXG/MXDES,Flight,455,Y,Software Organization Development Office,2501,"Yoshida, Ryan",,,6830,"Ward, Ashlee",6627,"Meyer, Jeffery"
+442,309 SMXG/MXDET,309 SMXG/MXDET,Flight,455,Y,Database Development Team / CLM,1279,"Milos, Peggy",,,6830,"Ward, Ashlee",6627,"Meyer, Jeffery"
+458,309 SMXG/MXDEV,309 SMXG/MXDEV,Super Flight,455,Y,System Test Office,1784,"Mills, Duane",,,6830,"Ward, Ashlee",6627,"Meyer, Jeffery"
+459,309 SMXG/MXDEV1,309 SMXG MXDEV1,Flight,458,Y,F-16 Block 30 System Test A,6211,"Hoffman, Kyle",1784,"Mills, Duane",6830,"Ward, Ashlee",6627,"Meyer, Jeffery"
+460,309 SMXG/MXDEV2,309 SMXG MXDEV2,Flight,458,Y,F-22 & F16 Block 50 System Test,4594,"Kummer, Gerald",4664,"Call, Daniel",6830,"Ward, Ashlee",6627,"Meyer, Jeffery"
+461,309 SMXG/MXDEV3,309 SMXG MXDEV3,Flight,458,Y,F-16 Block 30 System Test C,4765,"Lance, Tracy",,,6830,"Ward, Ashlee",6627,"Meyer, Jeffery"
+552,309 SMXG/MXDEV4,309 SMXG MXDEV4,Flight,458,Y,,6510,"Stowe, Gregory",,,6830,"Ward, Ashlee",6627,"Meyer, Jeffery"
