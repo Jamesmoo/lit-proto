@@ -1,6 +1,6 @@
-//import { html, render } from './lit-html.js'
+import { html, render } from './lit-html.js'
 
-import {html, render} from 'https://unpkg.com/lit-html?module';
+// import {html, render} from 'https://unpkg.com/lit-html?module';
 //import { repeat } from './repeat.js'
 import { orgs } from './org_data.js'
 import { KeyValDD, uniqueObjBy, compareByProperty } from './at_array_util.js'
