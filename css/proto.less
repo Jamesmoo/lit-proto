@@ -1,76 +1,94 @@
-@import (reference) "global.less";
+@import (reference) "./global.less";
 
 
 #main-container{
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-rendering: optimizeLegibility;
+    
+
     .header-container {
-        background-color: deepskyblue;
+        background-color: @color-header-banner;
         color: white;
         width: 100%;
         height: 150px;
         margin-bottom: 20px;
 
+        position: relative;
+        border-bottom: 1px solid darkcyan;
+        -webkit-box-shadow:0px 1px 1px @color-header-banner;
+        -moz-box-shadow:0px 1px 1px @color-header-banner;
+        box-shadow:0px 1px 1px @color-header-banner;
+
         .header-text{
             padding: 100px 0 0 20px;
             font-size: 20px;
-            color: @color-red;
         }
     }
+    .content-container{
+        padding: 50px 0 0 0 ;
+        width: @desktop-width;
+        margin: 0 auto;
 
-    .action-container{
-        .new-org-button{
-            margin-bottom: 20px;
-        }
-    }
-
-    .search-container {
-        border: 1px solid gray;
-        padding: 20px 10px 20px 10px;
-
-        .input-label{
-
-        }
-
-        .input-checkbox{
-
-        }
-
-        .input-parameters{
-            .control-management{
-
-            }
-
-            .control-options{
-
-            }
-
-            .control-employee{
-
-            }
-
-            .control-assistant{
-
+        .action-container{
+            .new-org-button{
+                margin-bottom: 20px;
             }
         }
 
-        .button{
-            .clear{
-
-            }
-
-            .search{
-                
-            }
-        }
-    }
+        #search-container {
+            border: 1px solid gray;
+            padding: 20px 10px 20px 10px;
+            
     
-    #parameters {
-        border: 1px solid gray;
-        padding: 20px 10px 20px 10px;
-    }
+            .input-label{
     
-    #searchedOrgs {
-        border: 1px solid gray;
-        padding: 20px 10px 20px 10px;
-        margin-top: 20px;
+            }
+    
+            .input-checkbox{
+    
+            }
+    
+            .input-parameters{
+                .control-management{
+    
+                }
+    
+                .control-options{
+    
+                }
+    
+                .control-employee{
+    
+                }
+    
+                .control-assistant{
+    
+                }
+            }
+    
+            .button{
+                .clear{
+    
+                }
+    
+                .search{
+                    
+                }
+            }
+        }
+
+        #results-container {
+            border: 1px solid gray;
+            padding: 20px 10px 20px 10px;
+            margin-top: 20px;
+        }
+    }
+
+    @media @tablet{
+
+    }
+
+    @media @phone{
+        
     }
 }
