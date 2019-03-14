@@ -37,22 +37,26 @@ const searchBox = (dropdowns) => html`
   <div class="input-parameters">
     <select class="control-management">
 			${dropdownOptions(dropdowns.columnOptions)}
+      <option value="alternateManagementAssistant">Alternate Management Assistant</option>
     </select>
     <select class="control-options">
 			${dropdownOptions(dropdowns.operatorOptions)}
+      <option value="notEqualTo">not equal to</option>
     </select>
     <select class="control-employee">
 			${dropdownOptions(dropdowns.employeeOptions)}
+      <option value="smithMorty">Smith, Morty (309)</option>
     </select>
     <select class="control-assistant">
 			${dropdownOptions(dropdowns.logicalOptions)}
+      <option value="Alternate Management Assistant">Alternate Management Assistant</option>
     </select>
   </div>
 ​
   <button class="button clear">Clear</button>
   <button class="button search">Search</button>  
 `
-render(searchBox(dropdowns), document.getElementById('search-container'));
+render(searchBox(dropdowns), document.getElementById('search'));
 
 const searchedOrgs = () => html`
     
@@ -87,7 +91,7 @@ const searchedOrgs = () => html`
     </table>
 `;
 
-render(searchedOrgs(), document.getElementById('results-container'));
+render(searchedOrgs(), document.getElementById('searchedOrgs'));
 
 
 const list = [
@@ -116,3 +120,20 @@ const listTemplate = (items) => html`
       <li>${index}: ${i.name}</li>`)}
   </ul>
 `;
+
+const listExample = [
+    {
+        id: 'ID 1',
+        name: 'Madison'
+    },
+    {
+        id: 'ID 2',
+        name: 'Emily'
+    },
+    {
+        id: 'ID 2',
+        name: 'Abigail'
+    }
+]
+
+render(listTemplate(listExample), document.getElementById('list-container'));

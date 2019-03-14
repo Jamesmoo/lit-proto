@@ -1,14 +1,6 @@
 var mainContainer = document.getElementById('main-container');
 var button = document.getElementsByClassName('button clear')[0];
 var ctrlMngtDrpDwn = document.getElementsByClassName('control-management')[0];
-// var button = document.getElementById("clearButton");
-
-
-/*buttons.forEach( (button) => {
-	button.addEventListener("click", function(){
-		alert('Hello from the other side!');
-	}, false);
-)*/
 
 button.addEventListener("click", () => {
 	alert('Hello from the other side!');
@@ -16,11 +8,23 @@ button.addEventListener("click", () => {
 
 ctrlMngtDrpDwn.addEventListener("change", (e) => {
 	console.log(e.target);
-	debugger;
+	//debugger;
 	alert('You changed the dropdown');
 });
-//debugger;
-// document.getElementsByClassName('new-org-button').addEventListener('click', function(){
-//     alert('pressed');   
-//     console.log('pressed');
-// });
+
+// const alertFunction = (e) => {
+// 	alert("You need to overwrite this function!");
+// }
+
+
+// // {
+// // 	handleEvent(e) {
+// // 		alert("You need to change this function!");
+// // 	},
+// // 	capture: true
+// // };
+
+// export default {
+// 	alertFunction:alertFunction
+// };
+
