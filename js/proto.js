@@ -1,5 +1,13 @@
 import { html, render } from './lit-html.js'
-import { repeat } from './repeat.js'
+
+// import {html, render} from 'https://unpkg.com/lit-html?module';
+//import { repeat } from './repeat.js'
+import { orgs } from './org_data.js'
+import { KeyValDD, uniqueObjBy, compareByProperty } from './at_array_util.js'
+// import { clearBtnClickHandler } from './events.js'
+// import { clearButton } from './clearButton';
+
+function myfunc() {alert('myfunc nothing');}
 
 const dropdowns = {
 	"columnOptions": [
@@ -12,18 +20,29 @@ const dropdowns = {
 		{"value": "contains", "ddValue": "contains" },
 		{"value": "doesn't contain", "ddValue": "doesntContain" }
 	],
-	"employeeOptions": [
+	"primarySupervisorOptions":
+		uniqueObjBy(orgs.map((org) =>  {return new KeyValDD(org.PRIMARY_SUPERVISOR_NAME,org.PRIMARY_SUPERVISOR_ID)}).sort(compareByProperty('value')),x => x.ddValue)
+	,
+	"altSupervisorOptions":
+		uniqueObjBy(orgs.map((org) =>  {return new KeyValDD(org.ALTERNATE_SUPERVISOR_NAME,org.ALTERNATE_SUPERVISOR_ID)}).sort(compareByProperty('value')),x => x.ddValue)
+	,
+	"timeKeeperOptions": /*[
 		{"value": "Smith, Morty (309)", "ddValue": "smithMorty" },
 		{"value": "Steiner, Braden (309)", "ddValue": "steinerBraden" },
-		{"value": "Adams, James (309)", "ddValue": "adamsJames" }
-	],
+		{"value": "Adams, James (309)", "ddValue": "adamsJames" }]*/
+		uniqueObjBy(orgs.map((org) =>  {return new KeyValDD(org.PRIMARY_TIMEKEEPER_NAME,org.PRIMARY_TIMEKEEPER_ID)}).sort(compareByProperty('value')),x => x.ddValue)
+	,
+	"altTimeKeeperOptions":
+	  uniqueObjBy(orgs.map((org) =>  {return new KeyValDD(org.ALTERNATE_TIMEKEEPER_NAME,org.ALTERNATE_TIMEKEEPER_ID)}).sort(compareByProperty('value')),x => x.ddValue)
+	,
 	"logicalOptions": [
 		{"value": "And", "ddValue": "and" },
 		{"value": "Or", "ddValue": "or" }
 	]
 };
+
 const dropdownOptions = (options) => html`
-	${options.map( (opt) => 
+	${options.map( (opt) =>
         html`<option value="${opt.ddValue}">${opt.value}</option>` )}
 `;
     
@@ -37,26 +56,22 @@ const searchBox = (dropdowns) => html`
   <div class="input-parameters">
     <select class="control-management">
 			${dropdownOptions(dropdowns.columnOptions)}
-      <option value="alternateManagementAssistant">Alternate Management Assistant</option>
     </select>
     <select class="control-options">
 			${dropdownOptions(dropdowns.operatorOptions)}
-      <option value="notEqualTo">not equal to</option>
     </select>
     <select class="control-employee">
-			${dropdownOptions(dropdowns.employeeOptions)}
-      <option value="smithMorty">Smith, Morty (309)</option>
+			${dropdownOptions(dropdowns.timeKeeperOptions)}
     </select>
     <select class="control-assistant">
 			${dropdownOptions(dropdowns.logicalOptions)}
-      <option value="Alternate Management Assistant">Alternate Management Assistant</option>
     </select>
   </div>
 ​
-  <button class="button clear">Clear</button>
-  <button class="button search">Search</button>  
+  <button @click=${e => console.log('clicked')}>Click Me</button>
+  <button class="button search">Search</button>
 `
-render(searchBox(dropdowns), document.getElementById('search'));
+render(searchBox(dropdowns), document.getElementById('search-container'));
 
 const searchedOrgs = () => html`
     
@@ -91,7 +106,7 @@ const searchedOrgs = () => html`
     </table>
 `;
 
-render(searchedOrgs(), document.getElementById('searchedOrgs'));
+render(searchedOrgs(), document.getElementById('results-container'));
 
 
 const list = [
@@ -120,20 +135,3 @@ const listTemplate = (items) => html`
       <li>${index}: ${i.name}</li>`)}
   </ul>
 `;
-
-const listExample = [
-    {
-        id: 'ID 1',
-        name: 'Madison'
-    },
-    {
-        id: 'ID 2',
-        name: 'Emily'
-    },
-    {
-        id: 'ID 2',
-        name: 'Abigail'
-    }
-]
-
-render(listTemplate(listExample), document.getElementById('list-container'));
