@@ -73,7 +73,7 @@ const searchBox = (dropdowns) => html`
 `
 render(searchBox(dropdowns), document.getElementById('search-container'));
 
-const searchedOrgs = () => html`
+const searchedOrgs = (orgs) => html`
     
     Searched Organizations:[hard coded]
     <table>
@@ -90,23 +90,25 @@ const searchedOrgs = () => html`
             <th>Alternate management Assistant</th>
             <th>Active</th>
         </tr>
+        ${ orgs.map( (org) => html`
         <tr>
-            <td>100</td>
-            <td>309 SMXG/MXDS</td>
-            <td>309 SMXG/MXDS</td>
-            <td>Squadron</td>
-            <td>309 SMXG</td>
-            <td>Business Operations</td>
-            <td>Brown, Doc</td>
-            <td></td>
-            <td>Simpson, Homer</td>
-            <td>Griffin, Peter</td>
-            <td>Y</td>
+            <td>${org.ORGANIZATION_ID}</td>
+            <td>${org.OFFICIAL_NAME}</td>
+            <td>${org.ORGANIZATION_NAME}</td>
+            <td>${org.ORGANIZATION_TYPE_CD}</td>
+            <td>${org.NEXT_HIGHER_ORG_ID}</td>
+            <td>${org.DESCRIPTION}</td>
+            <td>${org.PRIMARY_SUPERVISOR_NAME}</td>
+            <td>${org.ALTERNATE_SUPERVISOR_NAME}</td>
+            <td>${org.PRIMARY_TIMEKEEPER_NAME}</td>
+            <td>${org.ALTERNATE_TIMEKEEPER_NAME}</td>
+            <td>${org.ACTIVE_FLAG}</td>
         </tr>
+        `)}
     </table>
 `;
 
-render(searchedOrgs(), document.getElementById('results-container'));
+render(searchedOrgs(orgs), document.getElementById('results-container'));
 
 
 const list = [
