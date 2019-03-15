@@ -35,3 +35,7 @@
   padding: 20px 10px 20px 10px;
   margin-top: 20px;
 }
+#main-container .content-container #results-container td,
+#main-container .content-container #results-container th {
+  border: 1px solid gray;
+}
