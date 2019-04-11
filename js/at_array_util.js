@@ -1,3 +1,13 @@
+export function filterObjArrByVal(objarr, key, value) {
+  const newArray = [];
+  for(let i=0, l=objarr.length; i<l; i++) {
+    if(objarr[i][key] == value) {
+      newArray.push(objarr[i]);
+    }
+  }
+ return newArray;
+}
+
 
 export function KeyValDD(key,val) {
  this.value = key;
